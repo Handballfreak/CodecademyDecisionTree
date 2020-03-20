@@ -25,5 +25,6 @@ def build_tree(data, labels):
     branches.append(build_tree(data_subsets[i], label_subsets[i]))
   return branches
 
+
 tree = build_tree(car_data, car_labels)
 print_tree(tree)
